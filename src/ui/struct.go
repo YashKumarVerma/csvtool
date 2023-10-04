@@ -1,12 +1,9 @@
 package ui
 
-import "github.com/charmbracelet/bubbles/filepicker"
-
-type Model struct {
-	Filepicker   filepicker.Model
-	SelectedFile string
-	quitting     bool
-	err          error
+type uiState struct {
+	currentView string
 }
 
-type ClearErrorMsg struct{}
+var state = uiState{
+	currentView: "welcome",
+}

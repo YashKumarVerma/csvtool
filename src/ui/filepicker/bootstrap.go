@@ -1,4 +1,4 @@
-package ui
+package filepicker
 
 import "github.com/YashKumarVerma/csvtool/src/config"
 
